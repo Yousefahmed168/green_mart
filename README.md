@@ -6,7 +6,7 @@ This repository contains the Flutter implementation of the GreenMart application
 
 <p float="left">
   <img src="assets/screenshots/welcome_screen.png" width="30%" />
-  <img src="assets/screenshot/splash_screen.png" width="30%" />
+  <img src="assets/screenshots/splash_screen.png" width="30%" />
 </p>
 
 
