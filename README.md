@@ -5,8 +5,8 @@ This repository contains the Flutter implementation of the GreenMart application
 ## 🖼️ Screenshots
 
 <p float="left">
-  <img src="assets/screenshots/welcome_screen.png" width="30%" />
   <img src="assets/screenshots/splash_screen.png" width="30%" />
+  <img src="assets/screenshots/welcome_screen.png" width="30%" />
   <img src="assets/screenshots/login_screen.png" width="30%" />
   <img src="assets/screenshots/signup_screen.png" width="30%" />
   <img src="assets/screenshots/phone_number.png" width="30%" />
