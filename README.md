@@ -7,6 +7,10 @@ This repository contains the Flutter implementation of the GreenMart application
 <p float="left">
   <img src="assets/screenshots/welcome_screen.png" width="30%" />
   <img src="assets/screenshots/splash_screen.png" width="30%" />
+  <img src="assets/screenshots/login_screen.png" width="30%" />
+  <img src="assets/screenshots/signup_screen.png" width="30%" />
+  <img src="assets/screenshots/phone_number.png" width="30%" />
+  <img src="assets/screenshots/verfication.png" width="30%" />
 </p>
 
 
@@ -24,6 +28,10 @@ Smooth Transitions: Uses Flutter's PageRouteBuilder or standard navigation for a
 The educational walkthrough (lib/features/onboarding).
 
 Pageview Implementation: A smooth horizontal scroll/swipe mechanism to navigate through benefit slides.
+3. login screen
+4. sign up screen
+5. phone number screen 
+6. verfication by otp 
 
 
 

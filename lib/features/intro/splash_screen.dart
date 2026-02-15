@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:green_mart/core/constants/app_images.dart';
+import 'package:green_mart/core/functions/navigations.dart';
 import 'package:green_mart/core/styles/colors.dart';
 import 'package:green_mart/features/intro/onboarding.dart';
 
@@ -14,14 +15,11 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
+    super.initState();
     // delay for 3 seconds and then navigate to the next screen
     Future.delayed(Duration(seconds: 3), () {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => WelcomeScreen()),
-      );
+      pushReplacement(context, WelcomeScreen());
     });
-    super.initState();
   }
 
   @override
