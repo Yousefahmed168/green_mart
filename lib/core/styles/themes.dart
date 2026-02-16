@@ -1,0 +1,40 @@
+import 'package:flutter/material.dart';
+import 'package:green_mart/core/constants/app_fonts.dart';
+import 'package:green_mart/core/styles/colors.dart';
+import 'package:green_mart/core/styles/text_styles.dart';
+
+abstract class AppThemes {
+  static ThemeData get lighttheme => ThemeData(
+    fontFamily: AppFonts.poppins,
+    scaffoldBackgroundColor: AppColors.backgroundColor,
+    buttonTheme: ButtonThemeData(buttonColor: AppColors.primaryColor),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: AppColors.primaryColor,
+        minimumSize: Size(double.infinity, 60),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        foregroundColor: AppColors.backgroundColor,
+      ),
+    ),
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(
+        padding: EdgeInsets.zero,
+        minimumSize: Size.zero,
+      ),
+    ),
+    inputDecorationTheme: InputDecorationTheme(
+      hintStyle: TextStyles.caption2,
+      fillColor: AppColors.accentColor,
+      filled: true,
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(18),
+        borderSide: BorderSide.none,
+      ),
+    ),
+    colorScheme: ColorScheme.fromSeed(
+      seedColor: AppColors.primaryColor,
+      // text color
+      onSurface: AppColors.blackColor,
+    ),
+  );
+}
