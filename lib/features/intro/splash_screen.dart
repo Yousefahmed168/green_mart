@@ -3,7 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:green_mart/core/constants/app_images.dart';
 import 'package:green_mart/core/functions/navigations.dart';
 import 'package:green_mart/core/styles/colors.dart';
-import 'package:green_mart/features/intro/onboarding.dart';
+import 'package:green_mart/features/main/main_app_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -18,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     // delay for 3 seconds and then navigate to the next screen
     Future.delayed(Duration(seconds: 3), () {
-      pushReplacement(context, WelcomeScreen());
+      pushReplacement(context, MainAppScreen());
     });
   }
 

@@ -15,10 +15,7 @@ class PhoneNumber extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.backgroundColor,
-        leading: IconButton(
-          onPressed: () {},
-          icon: Icon(Icons.arrow_back_ios, color: AppColors.blackColor),
-        ),
+        
       ),
       body: Padding(
         padding: const EdgeInsets.all(17),

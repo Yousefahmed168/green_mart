@@ -3,7 +3,7 @@ import 'package:green_mart/core/functions/navigations.dart';
 import 'package:green_mart/core/styles/colors.dart';
 import 'package:green_mart/core/styles/text_styles.dart';
 import 'package:green_mart/core/widgets/main_button.dart';
-import 'package:green_mart/features/auth/pages/phone_number.dart';
+import 'package:green_mart/features/home/page/home_screen.dart';
 import 'package:pinput/pinput.dart';
 
 class VerificationScreen extends StatelessWidget {
@@ -12,13 +12,7 @@ class VerificationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: AppColors.backgroundColor,
-        leading: IconButton(
-          onPressed: () {},
-          icon: const Icon(Icons.arrow_back_ios, color: AppColors.blackColor),
-        ),
-      ),
+      appBar: AppBar(backgroundColor: AppColors.backgroundColor),
       body: Padding(
         padding: const EdgeInsets.all(17),
         child: Column(
@@ -53,7 +47,7 @@ class VerificationScreen extends StatelessWidget {
               alignment: AlignmentGeometry.centerRight,
               child: TextButton(
                 onPressed: () {
-                  pop(context, PhoneNumber());
+                  pop(context, HomeScreen());
                 },
                 child: Text(
                   "Change Phone Number",

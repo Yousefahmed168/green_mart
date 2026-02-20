@@ -8,12 +8,33 @@ abstract class AppThemes {
     fontFamily: AppFonts.poppins,
     scaffoldBackgroundColor: AppColors.backgroundColor,
     buttonTheme: ButtonThemeData(buttonColor: AppColors.primaryColor),
+    appBarTheme: AppBarTheme(
+      backgroundColor: AppColors.backgroundColor,
+      elevation: 0,
+      centerTitle: true,
+    ),
+    dividerColor: Colors.transparent,
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         backgroundColor: AppColors.primaryColor,
         minimumSize: Size(double.infinity, 60),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         foregroundColor: AppColors.backgroundColor,
+      ),
+    ),
+    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      type: BottomNavigationBarType.fixed,
+      selectedItemColor: AppColors.primaryColor,
+      unselectedItemColor: Colors.black,
+      backgroundColor: Colors.transparent,
+      elevation: 0,
+      selectedLabelStyle: TextStyles.caption2.copyWith(
+        fontWeight: FontWeight.w600,
+        height: 2,
+      ),
+      unselectedLabelStyle: TextStyles.caption2.copyWith(
+        fontWeight: FontWeight.w600,
+        height: 2,
       ),
     ),
     textButtonTheme: TextButtonThemeData(
